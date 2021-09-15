@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 source "$HOME/.aliases"
 source "$HOME/.cargo/env"
+source "$HOME/.credentials"
 
 PATH="$PATH:$HOME/.local/bin"
 PATH="$PATH:/snap/bin"
