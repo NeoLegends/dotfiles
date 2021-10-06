@@ -104,6 +104,11 @@ source "$HOME/.aliases"
 source "$HOME/.cargo/env"
 source "$HOME/.credentials"
 
+if [[ `uname` == "Darwin" ]]; then
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
+
 PATH="$PATH:$HOME/.local/bin"
 PATH="$PATH:/snap/bin"
 PATH="$PATH:$HOME/work/runtime-toolkit"
