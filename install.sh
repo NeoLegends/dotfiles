@@ -15,4 +15,7 @@ else
 	git config --global credential.helper store
 	echo "https://${CLOUDSMITH_API_USER}:${CLOUDSMITH_API_KEY}@dl.cloudsmith.io" >> ~/.git-credentials
 fi
-echo "Credential config done!"
+echo "Credential config done! Configuring shell..."
+
+sudo usermod --shell `which zsh` vscode
+echo "Shell config done!
