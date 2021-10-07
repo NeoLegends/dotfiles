@@ -1,0 +1,7 @@
+*
+!.aliases
+!.cargo/config.toml
+!.gitconfig
+!.gitignore
+!.zshrc
+!install.sh
