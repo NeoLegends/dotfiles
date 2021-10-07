@@ -5,6 +5,7 @@ export USER_SHELL="zsh"
 for i in .aliases .gitconfig .zshrc; do
 	ln --verbose --force --symbolic $PWD/$i ~/
 done
+touch ~/.credentials
 echo "Creating symlinks done!"
 
 if [[ -z "$CLOUDSMITH_API_KEY" ]]; then
