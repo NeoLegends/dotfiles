@@ -19,4 +19,4 @@ fi
 echo "Credential config done! Configuring shell..."
 
 sudo usermod --shell `which zsh` vscode
-echo "Shell config done!
+echo "Shell config done!"
